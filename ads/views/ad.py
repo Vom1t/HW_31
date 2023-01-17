@@ -19,9 +19,10 @@ def root(request):
 
 @method_decorator(csrf_exempt, name='dispatch')
 class AdListView(ListView):
+    model = Ad
 
     def get(self, request, *args, **kwargs):
-        model = Ad
+
         super().get(request, *args, **kwargs)
         self.object_list = self.object_list.order_by('-price')
         paginator = Paginator(self.object_list, TOTAL_ON_PAGE)

@@ -14,9 +14,9 @@ from users.models import User, Location
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UserListView(ListView):
+    model = User
 
     def get(self, request, *args, **kwargs):
-        model = User
         super().get(request, *args, **kwargs)
         self.object_list = self.object_list.order_by('username')
         paginator = Paginator(self.object_list, TOTAL_ON_PAGE)
