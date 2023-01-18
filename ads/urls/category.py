@@ -4,6 +4,6 @@ from ads.views.category import *
 
 
 urlpatterns = [
-    path('', CatListCreateView.as_view()),
-    path('<int:pk>', CatDetailView.as_view())
+    path('', CategoryListView.as_view()),
+    path('<int:pk>', CategoryDetailView.as_view())
 ]

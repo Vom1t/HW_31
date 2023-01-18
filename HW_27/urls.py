@@ -24,8 +24,6 @@ from ads.views.category import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', root),
-    path('cat/', CatListCreateView.as_view()),
-    path('cat/<int:pk>', CatDetailView.as_view()),
     path('ad/', include('ads.urls.ad')),
     path('cat/', include('ads.urls.category')),
     path('user/', include('users.urls')),
