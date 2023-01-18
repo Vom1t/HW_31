@@ -16,7 +16,7 @@ def convert_file(csv_file, json_file, model):
             else:
                 del row['Id']
             if 'location_id' in row:
-                row['location'] = [int(row['location_id'])]
+                row['locations'] = [int(row['location_id'])]
                 del row['location_id']
 
             if 'is_published' in row:
