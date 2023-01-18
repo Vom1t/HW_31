@@ -28,11 +28,14 @@ class UserSerializer(serializers.ModelSerializer):
 
 class UserPostSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(required=False)
-    location = LocationPostSerializer()
+    location = LocationPostSerializer(allow_null=True, required=False)
+
+    def is_valid(self, raise_exception=False):
+        self.location_data = self.initial_data.pop('location', None)
+        super().is_valid(raise_exception=raise_exception)
 
     def create(self, validated_data):
-        location_data = validated_data.pop('location')
-        location, _ = Locations.objects.get_or_create(**location_data)
+        location, _ = Locations.objects.get_or_create(**self.location_data)
         user = User.objects.create(location=location, **validated_data)
         user.set_password(user.password)
         user.save()
@@ -40,7 +43,17 @@ class UserPostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name', 'username', 'password', 'role', 'age', 'location')
+        fields = ('id',
+                  'first_name',
+                  'last_name',
+                  'username',
+                  'password',
+                  'role',
+                  'age',
+                  'location',
+                  'birth_date',
+                  'email'
+                  )
 
 
 class UserUpdateSerializer(serializers.ModelSerializer):

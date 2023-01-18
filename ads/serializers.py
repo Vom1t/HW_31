@@ -3,6 +3,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from ads.models import Category, Ad
 from rest_framework import serializers
 
+from ads.validators import check_published
 from users.models import User
 
 
@@ -17,7 +18,7 @@ class CategoryPostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'slug')
 
 
 class AdListSerializer(serializers.ModelSerializer):
@@ -37,6 +38,15 @@ class CreatableSlugRelatedField(serializers.SlugRelatedField):
             self.fail('does_not_exist', slug_name=self.slug_field, value=smart_str(data))
         except (TypeError, ValueError):
             self.fail('invalid')
+
+
+
+class AdCreateSerializer(serializers.ModelSerializer):
+    is_published = serializers.BooleanField(validators=[check_published])
+
+    class Meta:
+        model = Ad
+        fields = '__all__'
 
 
 class AdPostSerializer(serializers.ModelSerializer):

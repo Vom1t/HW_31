@@ -9,6 +9,9 @@
       "password": "gZvptL",
       "role": "member",
       "age": "21",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"1test@g.ru",
       "locations": [
         1
       ]
@@ -24,6 +27,9 @@
       "password": "4fVqL2",
       "role": "moderator",
       "age": "24",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"2test@g.ru",
       "locations": [
         3
       ]
@@ -39,6 +45,9 @@
       "password": "o535pj",
       "role": "admin",
       "age": "29",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"3test@g.ru",
       "locations": [
         8
       ]
@@ -54,6 +63,9 @@
       "password": "d49rSO",
       "role": "moderator",
       "age": "19",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"4test@g.ru",
       "locations": [
         10
       ]
@@ -69,6 +81,9 @@
       "password": "wCqlVE",
       "role": "member",
       "age": "41",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"5test@g.ru",
       "locations": [
         2
       ]
@@ -84,6 +99,9 @@
       "password": "xuR2jf",
       "role": "member",
       "age": "37",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"6test@g.ru",
       "locations": [
         4
       ]
@@ -99,6 +117,9 @@
       "password": "gzP4vR",
       "role": "member",
       "age": "26",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"7test@g.ru",
       "locations": [
         7
       ]
@@ -114,6 +135,9 @@
       "password": "zo0rj6",
       "role": "member",
       "age": "24",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"8test@g.ru",
       "locations": [
         5
       ]
@@ -129,6 +153,9 @@
       "password": "daMocL",
       "role": "moderator",
       "age": "22",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"9test@g.ru",
       "locations": [
         9
       ]
@@ -144,6 +171,9 @@
       "password": "sasha123456",
       "role": "member",
       "age": "35",
+      "date_joined":"2023-01-01T00:00:00+03:00",
+      "birth_date":"2023-01-01",
+      "email":"10test@g.ru",
       "locations": [
         6
       ]

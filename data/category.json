@@ -3,35 +3,40 @@
     "model": "ads.category",
     "pk": 1,
     "fields": {
-      "name": "Котики"
+      "name": "Котики",
+      "slug": "Котики"
     }
   },
   {
     "model": "ads.category",
     "pk": 2,
     "fields": {
-      "name": "Песики"
+      "name": "Песики",
+      "slug": "Песики"
     }
   },
   {
     "model": "ads.category",
     "pk": 3,
     "fields": {
-      "name": "Книги"
+      "name": "Книги",
+      "slug": "Книги"
     }
   },
   {
     "model": "ads.category",
     "pk": 4,
     "fields": {
-      "name": "Растения"
+      "name": "Растения",
+      "slug": "Растения"
     }
   },
   {
     "model": "ads.category",
     "pk": 5,
     "fields": {
-      "name": "Мебель и интерьер"
+      "name": "Мебель и интерьер",
+      "slug": "Мебель"
     }
   }
 ]
