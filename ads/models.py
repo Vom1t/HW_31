@@ -4,7 +4,7 @@ from users.models import User
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=50, db_index=True, verbose_name='Наименование', unique=True)
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
