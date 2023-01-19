@@ -23,11 +23,6 @@ from ads.views.category import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', root),
-    path('ad/', include('ads.urls.ad')),
-    path('cat/', include('ads.urls.category')),
-    path('user/', include('users.urls')),
-    path('admin/', admin.site.urls),
     path('cat/', include('ads.urls.category')),
     path('ad/', include('ads.urls.ad')),
     path('user/', include('users.urls')),
