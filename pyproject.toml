@@ -16,6 +16,7 @@ djangorestframework = "^3.14.0"
 python-dateutil = "^2.8.2"
 pytest = "^7.2.1"
 pytest-factoryboy = "^2.5.1"
+pytest-django = "^4.5.2"
 
 
 [build-system]
