@@ -29,6 +29,6 @@ class AdFactory(factory.django.DjangoModelFactory):
         model = Ad
 
     name = factory.Faker('name')
-    category = factory.RelatedFactoryList(CategoryFactory)
+    category = factory.SubFactory(CategoryFactory)
     price = 12000
     author = factory.SubFactory(UserFactory)

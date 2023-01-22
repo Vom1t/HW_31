@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'HW_27.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'avito_db',
         'USER': 'postgres',
-        'PASSWORD': '1661',
-        'PORT': '5432',
+        'PASSWORD': 'postgres',
+        'PORT': '5430',
         'HOST': 'localhost',
     }
 }
