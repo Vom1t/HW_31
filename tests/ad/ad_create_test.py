@@ -5,7 +5,7 @@ import pytest
 def test_ad_create(client, category, access_token):
     data = {
         'name': 'Test Ad Pytest',
-        'category_id': [str(category.pk)],
+        'category': [str(category.pk)],
         'price': 12000
     }
 
@@ -17,7 +17,7 @@ def test_ad_create(client, category, access_token):
         'description': None,
         'is_published': False,
         'image': None,
-        'category_id': [str(category.pk)],
+        'category': [str(category.pk)],
     }
 
     response = client.post('/ad/create/', data, content_type='application/json',
